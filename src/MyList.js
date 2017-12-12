@@ -3,6 +3,14 @@ import './App.css';
 import ListItem from './ListItem';
 
 class MyList extends Component {
+
+  constructor (props) {
+    super()
+    this.state = {
+      toDoItemArray: props.theList
+    }
+  }
+
   render() {
 
     let todoItems = this.props.theList.map( (item, index) => (
@@ -21,8 +29,3 @@ class MyList extends Component {
 }
 
 export default MyList;
-
-// const theList = ["avocado", "affogato", "alligator"]
-// let todoItems = theList.map( (thing, index) => {
-//   return newTodoItem = '<li>' + thing + '</li>'
-// })
