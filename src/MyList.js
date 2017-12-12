@@ -8,7 +8,7 @@ class MyList extends Component {
       <div>
         <h1>Things I should stop procrastinating about:</h1>
         <ul>
-          <ListItem />
+          <ListItem doThis="adopt a puppy"/>
         </ul>
       </div>
     );
