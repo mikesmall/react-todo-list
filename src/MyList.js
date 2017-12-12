@@ -30,6 +30,7 @@ class MyList extends Component {
     var toDos = this.state.toDoItemArray
     toDos.push(this.state.newItem)
     this.setState({toDoItemArray: toDos, newItem: ''})
+    console.log("New item should appear in list now.");
   }
 
   render() {
