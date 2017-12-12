@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import MyList from './MyList';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+var toDos = ["Buy ice cream", "Eat ice cream", "Go to the gym"]
+
+
+ReactDOM.render(
+  <MyList theList={toDos} />, 
+  document.getElementById('root')
+);
