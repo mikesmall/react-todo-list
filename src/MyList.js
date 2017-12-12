@@ -4,11 +4,16 @@ import ListItem from './ListItem';
 
 class MyList extends Component {
   render() {
+
+    let todoItems = this.props.theList.map( (item, index) => (
+      <ListItem doThis={item} key={index} />
+    ))
+
     return (
       <div>
-        <h1>Things I should stop procrastinating about:</h1>
+        <h1>Things I should stop delaying:</h1>
         <ul>
-          <ListItem doThis="adopt a puppy"/>
+          {todoItems}
         </ul>
       </div>
     );
@@ -16,3 +21,8 @@ class MyList extends Component {
 }
 
 export default MyList;
+
+// const theList = ["avocado", "affogato", "alligator"]
+// let todoItems = theList.map( (thing, index) => {
+//   return newTodoItem = '<li>' + thing + '</li>'
+// })
