@@ -1,9 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   text-align: center;
   background-color: #DAF7A6;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 li {
@@ -11,6 +15,7 @@ li {
   width: 200px;
   display: block;
   margin-bottom: 20px;
+  font-size: 1.2em;
 }
 
 div{
@@ -25,4 +30,5 @@ ul {
 
 button {
   margin-bottom: 10px;
+  box-shadow: 1px 1px 1px lightgrey;
 }
