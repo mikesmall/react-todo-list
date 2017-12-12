@@ -29,6 +29,7 @@ class MyList extends Component {
         <ul>
           {todoItems}
         </ul>
+        <button onClick={(e) => this.clearList(e)}>Clear My To-Do List</button>
       </div>
     );
   }
