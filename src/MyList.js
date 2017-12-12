@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ListItem from './ListItem';
 
 class MyList extends Component {
   render() {
@@ -8,7 +8,7 @@ class MyList extends Component {
       <div>
         <h1>Things I should stop procrastinating about:</h1>
         <ul>
-          <li></li>
+          <ListItem />
         </ul>
       </div>
     );
