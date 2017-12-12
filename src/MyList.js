@@ -11,9 +11,15 @@ class MyList extends Component {
     }
   }
 
+  clearList (e) {
+    this.setState({
+      toDoItemArray: []
+    });
+  }
+
   render() {
 
-    let todoItems = this.props.theList.map( (item, index) => (
+    let todoItems = this.state.toDoItemArray.map( (item, index) => (
       <ListItem doThis={item} key={index} />
     ))
 
